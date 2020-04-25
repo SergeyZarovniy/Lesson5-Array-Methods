@@ -356,48 +356,48 @@
 //     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
 //     Власник автомобіля теж має бути обєкт, у якого є поля
 // Імя, вік, стаж водіння.
-let carArr = [
-    {modelCar:'Audi', power:500, price:25000, year:2010, owner:{name:'Victor',age:26,experience:1}},
-    {modelCar:'Opel', power:140, price:9000, year:2006, owner:{name:'Andriy',age:26,experience:1}},
-    {modelCar:'Volvo', power:77, price:5000, year:2003, owner:{name:'Serhiy',age:28,experience:10}},
-    {modelCar:'Lada', power:50, price:1000, year:1999, owner:{name:'Vasia',age:19,experience:3}},
-    {modelCar:'Toyota', power:200, price:16000, year:2007, owner:{name:'Yana',age:26,experience:0}},
-    {modelCar:'Jeep', power:320, price:50000, year:2019, owner:{name:'Ivan',age:24,experience:6}},
-    {modelCar:'Shkoda', power:100, price:7000, year:2011, owner:{name:'Taras',age:55,experience:20}},
-    {modelCar:'Subaru', power:300, price:4200, year:1996, owner:{name:'Tranduile',age:77,experience:50}},
-    {modelCar:'BMW', power:650, price:117000, year:2019, owner:{name:'Efim',age:120,experience:100}},
-    {modelCar:'Tavria', power:10, price:10, year:1995, owner:{name:'Eugene',age:10,experience:1}},
-];
-//     Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
-for (let i = 1; i < carArr.length; i+=2) {
-    carArr[i].power = carArr[i].power / 100 * 10 + carArr[i].power;
-}
+// let carArr = [
+//     {modelCar:'Audi', power:500, price:25000, year:2010, owner:{name:'Victor',age:26,experience:1}},
+//     {modelCar:'Opel', power:140, price:9000, year:2006, owner:{name:'Andriy',age:26,experience:1}},
+//     {modelCar:'Volvo', power:77, price:5000, year:2003, owner:{name:'Serhiy',age:28,experience:10}},
+//     {modelCar:'Lada', power:50, price:1000, year:1999, owner:{name:'Vasia',age:19,experience:3}},
+//     {modelCar:'Toyota', power:200, price:16000, year:2007, owner:{name:'Yana',age:26,experience:0}},
+//     {modelCar:'Jeep', power:320, price:50000, year:2019, owner:{name:'Ivan',age:24,experience:6}},
+//     {modelCar:'Shkoda', power:100, price:7000, year:2011, owner:{name:'Taras',age:55,experience:20}},
+//     {modelCar:'Subaru', power:300, price:4200, year:1996, owner:{name:'Tranduile',age:77,experience:50}},
+//     {modelCar:'BMW', power:650, price:117000, year:2019, owner:{name:'Efim',age:120,experience:100}},
+//     {modelCar:'Tavria', power:10, price:10, year:1995, owner:{name:'Eugene',age:10,experience:1}},
+// ];
+// //     Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
+// for (let i = 1; i < carArr.length; i+=2) {
+//     carArr[i].power = carArr[i].power / 100 * 10 + carArr[i].power;
+// }
+// // console.log(carArr);
+// // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+// for ( let i = 1; i < carArr.length; i+=2) {
+//     carArr[i].owner = carArr[i].owner = {name: 'NewDriver', age: null, experience: null}
+// }
 // console.log(carArr);
-// На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
-for ( let i = 1; i < carArr.length; i+=2) {
-    carArr[i].owner = carArr[i].owner = {name: 'NewDriver', age: null, experience: null}
-}
-console.log(carArr);
-// Для початку вкладіть всі наші створені автомобілі в масив cars.
-//     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
-for (let i = 1; i < carArr.length; i +=2) {
-    carArr[i].power = carArr[i].power / 100 * 10 + carArr[i].power;
-    carArr[i].price = carArr[i].price / 100 * 5 + carArr[i].price;
-}
-console.log(carArr);
-// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
-
-for ( let i = 0; i < carArr.length; i++) {
-    if (carArr[i].owner.experience < 5 && carArr[i].owner.age > 25) {
-        carArr[i].owner.experience ++;
-    }
-}
-console.log(carArr);
-//     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
-for (let i = 0; i < carArr.length; i++){
-
-}
-
+// // Для початку вкладіть всі наші створені автомобілі в масив cars.
+// //     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+// for (let i = 1; i < carArr.length; i +=2) {
+//     carArr[i].power = carArr[i].power / 100 * 10 + carArr[i].power;
+//     carArr[i].price = carArr[i].price / 100 * 5 + carArr[i].price;
+// }
+// console.log(carArr);
+// // Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+//
+// for ( let i = 0; i < carArr.length; i++) {
+//     if (carArr[i].owner.experience < 5 && carArr[i].owner.age > 25) {
+//         carArr[i].owner.experience ++;
+//     }
+// }
+// console.log(carArr);
+// //     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+// let sumOfPrices = carArr.reduce((previousValue, currentValue) => {
+//     return previousValue + currentValue.price;
+// },0);
+// console.log(sumOfPrices);
 // Задача: дан отсортированный по возрастанию массив целых чисел. Необходимо вернуть наименьший и наибольший индекс заданного элемента.
 //     Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
 //     Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
